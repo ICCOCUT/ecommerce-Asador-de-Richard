@@ -2,6 +2,8 @@ import { useQuery } from '@tanstack/react-query';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Alert from '../components/Alert';
 import ProductGrid from '../components/ProductGrid';
 import Skelton from '../components/Skelton';
 
@@ -30,9 +32,8 @@ const Home: NextPage = () => {
 				<meta name='description' content='All Products' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
+			<Navbar />
 			<main className='container mx-auto'>
-				<Navbar />
 				{isLoading ? (
 					<Skelton />
 				) : (
@@ -42,7 +43,9 @@ const Home: NextPage = () => {
 						)}
 					</>
 				)}
+				<Alert />
 			</main>
+			<Footer />
 		</div>
 	);
 };
