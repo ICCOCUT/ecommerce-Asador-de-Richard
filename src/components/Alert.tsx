@@ -1,5 +1,16 @@
+import { useState } from 'react';
+
+/**
+ * Este es un componente de React que muestra un mensaje de alerta con un icono y un botón de cierre.
+ */
 export default function Alert() {
-	return (
+	const [showAlert, setShowAlert] = useState(true);
+
+	function hideAlert() {
+		setShowAlert(false);
+	}
+
+	return showAlert ? (
 		<div className='fixed bottom-0 right-0' id='alerta'>
 			<div
 				className='bg-yellow-100 rounded-lg py-5 px-6 mb-3 text-base text-yellow-700 inline-flex items-center w-full'
@@ -19,7 +30,22 @@ export default function Alert() {
 					/>
 				</svg>
 				<p>Esta es una página de prueba con fines educativos.</p>
+				<button onClick={hideAlert} className='ml-auto'>
+					<svg
+						xmlns='http://www.w3.org/2000/svg'
+						className='h-6 w-6'
+						fill='none'
+						viewBox='0 0 24 24'
+						stroke='currentColor'>
+						<path
+							strokeLinecap='round'
+							strokeLinejoin='round'
+							strokeWidth='2'
+							d='M6 18L18 6M6 6l12 12'
+						/>
+					</svg>
+				</button>
 			</div>
 		</div>
-	);
+	) : null;
 }
