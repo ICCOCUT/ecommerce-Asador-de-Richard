@@ -1,6 +1,11 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
 
+/**
+ * Este es un componente de React para el pie de página de un sitio web que incluye información sobre
+ * el restaurante, enlaces de navegación y un aviso de derechos de autor.
+ * @returns Se devuelve el componente de pie de página.
+ */
 const Footer = () => {
 	return (
 		<footer className='text-gray-400 bg-primaryGray body-font'>
@@ -99,17 +104,17 @@ const Footer = () => {
 						© 2023 El Asador de Richard. Todos los derechos reservados
 					</p>
 					<span className='inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start'>
-						<a href='dfs'>
+						<NextLink href='/Terms'>
 							<p className='text-gray-100 hover:text-teal-300'>
 								Términos de servicio
 							</p>
-						</a>
+						</NextLink>
 						<p className='text-gray-100 mx-2'>|</p>
-						<a href='adf'>
+						<NextLink href='/Privacypolicy'>
 							<p className='text-gray-100 hover:text-teal-300'>
 								Política de privacidad
 							</p>
-						</a>
+						</NextLink>
 					</span>
 				</div>
 			</div>

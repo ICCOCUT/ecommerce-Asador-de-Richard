@@ -1,6 +1,12 @@
 import NextLink from 'next/link';
 import Image from 'next/image';
 
+/* Este código define un componente funcional llamado `Navbar` que devuelve un elemento de encabezado
+con una barra de navegación. La barra de navegación contiene enlaces a diferentes páginas del sitio
+web, un ícono de carrito de compras y un botón de inicio de sesión. El componente utiliza los
+componentes `NextLink` e `Image` de Next.js para crear los enlaces y mostrar el logotipo y el icono
+del carrito de compras. El componente también utiliza clases CSS de Tailwind para diseñar los
+elementos. Finalmente, el componente se exporta como la exportación predeterminada del módulo. */
 const Navbar = () => {
 	return (
 		<header aria-label='Site Header' className='bg-primaryGray w-full'>
@@ -56,6 +62,7 @@ const Navbar = () => {
 						<div className='sm:flex sm:gap-4'>
 							<div className='px-5 py-2.5 text-sm text-primaryYellow flex'>
 								<Image
+									className='h-auto w-auto'
 									src='carrito.svg'
 									alt='carrito de compras'
 									width={40}
