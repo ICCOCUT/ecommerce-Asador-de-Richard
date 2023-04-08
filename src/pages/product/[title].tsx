@@ -48,7 +48,7 @@ const SingleProduct = () => {
 		[`singleProduct, ${router?.query?.title}`],
 		getSingleProduct,
 		{
-			enabled: !!router?.query?.title,
+			enabled: Boolean(router?.query?.title),
 		},
 	);
 

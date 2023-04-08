@@ -43,7 +43,7 @@ const getSingleCategory = async (
 			});
 
 			if (!categoriesData) {
-				return res.status(404).json({ message: `Category not found` });
+				return res.status(404).json({ message: 'Category not found' });
 			}
 
 			let hasMore = true;
@@ -78,7 +78,7 @@ const getSingleCategory = async (
 			},
 		});
 		if (!categoriesData) {
-			return res.status(404).json({ message: `Category not found` });
+			return res.status(404).json({ message: 'Category not found' });
 		}
 
 		let hasMore = true;

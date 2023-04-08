@@ -26,7 +26,7 @@ const SingleCategory = () => {
 		[`singleCategory ${router.query.id as string}`],
 		getSingleCategory,
 		{
-			enabled: !!router.query.id,
+			enabled: Boolean(router.query.id),
 			getNextPageParam: lastPage => {
 				const nextCursor =
 					lastPage?.category?.products[lastPage?.category?.products?.length - 1]
