@@ -1,53 +1,62 @@
-import { useQuery } from '@tanstack/react-query';
-import type { NextPage } from 'next';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Alert from '../components/Alert';
-import ProductGrid from '../components/ProductGrid';
-import Skelton from '../components/Skelton';
+import Presentation from '../components/index/Presentation';
+import History from '../components/index/History';
+import Hero from '../components/index/Hero';
+import Galery from '../components/index/Galery';
+import Chefs from '../components/index/Chefs';
 
-const Home: NextPage = () => {
-	const getAllCategories = async () => {
-		try {
-			const respJSON = await fetch('/api/categories');
-			const resp = await respJSON.json();
-			return resp;
-		} catch (error) {
-			throw error;
-		}
-	};
-
-	const { isLoading, data } = useQuery(
-		['AllCategoreiesWithProducts'],
-		getAllCategories,
-	);
-
-	const categories = data?.categories;
-
+export default function Home() {
 	return (
-		<div>
+		<>
 			<Head>
-				<title>All Products</title>
-				<meta name='description' content='All Products' />
+				<title>El Asador de Richard</title>
+				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<meta
+					name='description'
+					content='El asador de Richard tiene gran ambiente y una variedad de carnes a la brasa.
+					cervezas completan esta experiencia. Ven y disfruta de una comida inolvidable.'
+				/>
 				<link rel='icon' href='/favicon.ico' />
+				{/* Facebook meta tags */}
+				<meta property='og:url' content='www.elasadorderichard.live/' />
+				<meta property='og:type' content='website' />
+				<meta property='og:title' content='El asador de Richard' />
+				<meta
+					property='og:description'
+					content='El asador de Richard tiene gran ambiente y una variedad de carnes a la brasa.
+				Las cervezas completan esta experiencia. Ven y disfruta de una comida inolvidable.'
+				/>
+				<meta
+					property='og:image'
+					content='https://raw.githubusercontent.com/ICCOCUT/Asador-de-Richard/main/ProjectPreview.png'
+				/>
+				{/* Twitter meta tags */}
+				<meta name='twitter:card' content='summary_large_image' />
+				<meta property='twitter:url' content='www.elasadorderichard.live/' />
+				<meta name='twitter:title' content='El asador de Richard' />
+				<meta
+					name='twitter:description'
+					content='El asador de Richard tiene gran ambiente y una variedad de carnes a la brasa.
+				Las cervezas completan esta experiencia. Ven y disfruta de una comida inolvidable.'
+				/>
+				<meta
+					name='twitter:image'
+					content='https://raw.githubusercontent.com/ICCOCUT/Asador-de-Richard/main/ProjectPreview.png'
+				/>
 			</Head>
-			<Navbar />
-			<main className='container mx-auto'>
-				{isLoading ? (
-					<Skelton />
-				) : (
-					<>
-						{categories && categories?.length > 0 && (
-							<ProductGrid showLink={true} categories={categories} />
-						)}
-					</>
-				)}
+			<main>
+				<Navbar />
 				<Alert />
+				<Presentation />
+				<History />
+				<Hero />
+				<Galery />
+				<Chefs />
+				<Footer />
 			</main>
-			<Footer />
-		</div>
+		</>
 	);
-};
-
-export default Home;
+}

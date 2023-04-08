@@ -26,8 +26,8 @@ const Navbar = () => {
 								<li className='text-center'>
 									<NextLink
 										className='text-primaryYellow hover:text-white/75 font-bold text-xl'
-										href='/menu'>
-										MENÚ
+										href='/'>
+										INICIO
 									</NextLink>
 								</li>
 
@@ -42,8 +42,8 @@ const Navbar = () => {
 								<li className='text-center'>
 									<NextLink
 										className='text-primaryYellow hover:text-white/75 font-bold text-xl'
-										href='/platillos'>
-										PLATILLOS
+										href='/Menu'>
+										MENU
 									</NextLink>
 								</li>
 

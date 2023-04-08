@@ -11,6 +11,16 @@ interface IProductGrid extends TApiAllCategoriesResp {
 	loadMoreFun?: Function;
 }
 
+/* Este es un componente funcional en TypeScript React que admite accesorios de tipo `IProductGrid`.
+Representa una cuadrícula de productos agrupados por categorías, cada categoría tiene un nombre y
+una lista de productos. El componente también tiene la opción de mostrar un enlace para ver más
+productos en una categoría y la capacidad de cargar más productos cuando el usuario se desplaza
+hasta el final de la página. El gancho `useInView` se usa para detectar cuándo el usuario se ha
+desplazado hasta el final de la página, y el gancho `useEffect` se usa para llamar a la función
+`loadMoreFun` cuando el usuario llega al final de la página. El componente también utiliza los
+componentes `NextImage` y `NextLink` de Next.js para la representación de imágenes y enlaces,
+respectivamente. */
+
 const ProductGrid = (props: IProductGrid) => {
 	const { categories, showLink, loadMoreFun, hasMore } = props;
 	const { ref, inView } = useInView();
@@ -45,7 +55,7 @@ const ProductGrid = (props: IProductGrid) => {
 								key={product.title}>
 								<div className='min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80'>
 									<NextImage
-										priority={true}
+										priority
 										layout='responsive'
 										width='25'
 										height='25'
