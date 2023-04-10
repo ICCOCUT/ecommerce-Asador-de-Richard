@@ -8,61 +8,71 @@ import Image from 'next/image';
  */
 export default function Galery() {
 	return (
-		<section className='text-gray-400 bg-primaryGray body-font'>
-			<div className='container px-5 py-24 mx-auto flex flex-wrap'>
-				<div className='flex w-full mb-20 flex-wrap mx-auto justify-center items-center'>
-					<h2 className='sm:text-5xl text-4xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4 text-center'>
-						Galería de <span className='text-primaryYellow'>Alimentos</span>
-					</h2>
+		<section className='bg-primaryGray'>
+			<div className='container mx-auto px-5 py-2 lg:px-32 lg:pt-12 pb-16'>
+				<h2 className='text-5xl font-title text-primaryYellow  mb-4 text-center'>
+					Platillos
+				</h2>
+				<div className='-m-1 flex flex-wrap md:-m-2'>
+					<div className='flex w-1/2 flex-wrap'>
+						<div className='w-1/2 p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/chorizo.jpg'
+							/>
+						</div>
+						<div className='w-1/2 p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/platillo1.jpg'
+							/>
+						</div>
+						<div className='w-full p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/asador.jpg'
+							/>
+						</div>
+					</div>
+					<div className='flex w-1/2 flex-wrap'>
+						<div className='w-full p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/platoenmesa.jpg'
+							/>
+						</div>
+						<div className='w-1/2 p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/pollo.jpg'
+							/>
+						</div>
+						<div className='w-1/2 p-1 md:p-2'>
+							<Image
+								width={500}
+								height={500}
+								alt='gallery'
+								className='block h-full w-full rounded-lg object-cover object-center'
+								src='/img/Galery/platillopapas.jpg'
+							/>
+						</div>
+					</div>
 				</div>
-				{/* <div className='flex flex-wrap md:-m-2 -m-1'>
-					<div className='flex flex-wrap w-1/2'>
-						<div className='md:p-2 p-1 w-1/2'>
-							<Image
-								alt='gallery'
-								className='w-full object-cover h-full object-center block border border-white'
-								src=''
-							/>
-						</div>
-						<div className='md:p-2 p-1 w-1/2'>
-							<Image
-								alt='gallery'
-								className='w-full object-cover h-full object-center block border border-white'
-								src=''
-							/>
-						</div>
-						<div className='md:p-2 p-1 w-full'>
-							<Image
-								alt='gallery'
-								className='w-full h-full object-cover object-center block border border-white'
-								src=''
-							/>
-						</div>
-					</div>
-					<div className='flex flex-wrap w-1/2'>
-						<div className='md:p-2 p-1 w-full'>
-							<Image
-								alt='gallery'
-								className='w-full h-full object-cover object-center block border border-white'
-								src=''
-							/>
-						</div>
-						<div className='md:p-2 p-1 w-1/2'>
-							<Image
-								alt='gallery'
-								className='w-full object-cover h-full object-center block border border-white'
-								src=''
-							/>
-						</div>
-						<div className='md:p-2 p-1 w-1/2'>
-							<Image
-								alt='gallery'
-								className='w-full object-cover h-full object-center block border border-white'
-								src=''
-							/>
-						</div>
-					</div>
-				</div> */}
 			</div>
 		</section>
 	);
