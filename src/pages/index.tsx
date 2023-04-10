@@ -7,6 +7,7 @@ import History from '../components/index/History';
 import Hero from '../components/index/Hero';
 import Galery from '../components/index/Galery';
 import Chefs from '../components/index/Chefs';
+import Testimonials from '../components/index/Testimonials';
 
 export default function Home() {
 	return (
@@ -54,6 +55,7 @@ export default function Home() {
 				<History />
 				<Hero />
 				<Galery />
+				<Testimonials />
 				<Chefs />
 				<Footer />
 			</main>
