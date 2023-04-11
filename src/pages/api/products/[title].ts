@@ -3,6 +3,7 @@ import nc from 'next-connect';
 import { prisma } from '../../../lib/prisma';
 import { TApiErrorResp, TApiSingleProductResp } from '../../../types';
 
+
 const getSingleProduct = async (
 	req: NextApiRequest,
 	res: NextApiResponse<TApiSingleProductResp | TApiErrorResp>,

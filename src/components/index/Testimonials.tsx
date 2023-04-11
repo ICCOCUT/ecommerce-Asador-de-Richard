@@ -3,13 +3,28 @@ import React, { useState } from 'react';
 import { items } from '../../data/Testimonials'; // Ruta al archivo de datos
 import Image from 'next/image';
 
+/**
+ * Este es un componente funcional que muestra un carrusel de testimonios con botones de navegación
+ * para cambiar entre ellos.
+ * @returns Se está devolviendo el componente Carrusel, que representa una sección con un título, una
+ * imagen, un nombre, una profesión y un testimonio. También incluye dos botones para navegar a través
+ * de los testimonios, que son manejados por las funciones handlePrev y handleNext que actualizan el
+ * estado del índice actual.
+ */
 const Carousel = () => {
 	const [currentIndex, setCurrentIndex] = useState(0);
 
+	/**
+	 * La función maneja el índice anterior de una matriz, regresando al final si el índice actual está al
+	 * principio.
+	 */
 	const handlePrev = () => {
 		setCurrentIndex(currentIndex === 0 ? items.length - 1 : currentIndex - 1);
 	};
 
+	/**
+	 * La función maneja el siguiente elemento en una lista actualizando el índice actual.
+	 */
 	const handleNext = () => {
 		setCurrentIndex(currentIndex === items.length - 1 ? 0 : currentIndex + 1);
 	};

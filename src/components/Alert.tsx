@@ -6,6 +6,9 @@ import { useState } from 'react';
 export default function Alert() {
 	const [showAlert, setShowAlert] = useState(true);
 
+	/**
+	 * La función oculta una alerta configurando el estado de "showAlert" en falso.
+	 */
 	function hideAlert() {
 		setShowAlert(false);
 	}

@@ -1,3 +1,11 @@
+/* Este código define un componente funcional llamado `Skelton` que devuelve una interfaz de usuario de
+carga de esqueleto. La interfaz de usuario consta de un contenedor con un fondo gris y esquinas
+redondeadas, seguido de una cuadrícula de 16 elementos, cada uno con un fondo negro y esquinas
+redondeadas. Cada elemento tiene un rectángulo gris con esquinas redondeadas en la parte superior,
+seguido de dos rectángulos grises más pequeños con esquinas redondeadas debajo. Esta interfaz de
+usuario se usa comúnmente para indicar que el contenido se está cargando o para proporcionar un
+marcador de posición mientras se recupera el contenido. El componente se exporta como la exportación
+predeterminada del módulo. */
 const Skelton = () => {
 	return (
 		<>

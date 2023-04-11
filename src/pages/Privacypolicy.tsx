@@ -3,6 +3,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Titulo, Info } from '../data/Privacypolicy';
 
+/* Este es un componente funcional en TypeScript React que representa la página de política de
+privacidad de un sitio web. Importa los componentes `Head`, `Navbar` y `Footer`, así como las
+matrices `Titulo` e `Info` de archivos separados. El componente `Head` establece el título, la
+descripción y el favicon de la página. Los componentes `Navbar` y `Footer` representan la barra de
+navegación y el pie de página del sitio web, respectivamente. Las matrices `Título` e `Info` se
+utilizan para representar dinámicamente los detalles de la política de privacidad mediante una
+función de `mapa`. */
 const Terms = () => {
 	return (
 		<div>

@@ -6,6 +6,19 @@ import {
 	TApiSingleCategoryWithProductResp,
 } from '../../../types';
 
+/**
+ * Esta es una función asíncrona que recupera una sola categoría con sus productos de una base de datos
+ * y la devuelve como una respuesta JSON, con un cursor opcional para la paginación.
+ * @param {NextApiRequest} req - El objeto NextApiRequest, que representa la solicitud HTTP entrante.
+ * Contiene información sobre la solicitud, como la URL, los encabezados y los parámetros de consulta.
+ * @param res - El parámetro `res` es el objeto de respuesta que se enviará de vuelta al cliente que
+ * realiza la solicitud de API. Es de tipo `NextApiResponse<TApiSingleCategoryWithProductResp |
+ * TApiErrorResp>`, lo que significa que puede devolver una respuesta exitosa con datos de tipo
+ * `TApiSingle
+ * @returns Esta función devuelve una sola categoría con sus productos e información de paginación (si
+ * corresponde) en respuesta a una solicitud GET. La respuesta es una respuesta de éxito con los datos
+ * de la categoría o una respuesta de error con un mensaje de error.
+ */
 const getSingleCategory = async (
 	req: NextApiRequest,
 	res: NextApiResponse<TApiSingleCategoryWithProductResp | TApiErrorResp>,

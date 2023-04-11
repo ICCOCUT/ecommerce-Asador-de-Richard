@@ -9,6 +9,15 @@ import Galery from '../components/index/Galery';
 import Chefs from '../components/index/Chefs';
 import Testimonials from '../components/index/Testimonials';
 
+/**
+ * Esta es una función predeterminada que devuelve un elemento JSX que representa la página de inicio
+ * de un sitio web, incluidas las metaetiquetas, una barra de navegación, alertas, una sección de
+ * presentación, una sección de historial, una sección de héroe, una sección de galería, testimonios,
+ * chefs y un pie de página. .
+ * @returns Se está devolviendo el componente Inicio, que incluye un componente Head con varias
+ * metaetiquetas para SEO y uso compartido en redes sociales, así como varios otros componentes como
+ * Navbar, Alert, Presentation, History, Hero, Gallery, Testimonials, Chefs y Footer.
+ */
 export default function Home() {
 	return (
 		<>

@@ -3,6 +3,13 @@ import { useRouter } from 'next/router';
 import { HiCheckCircle } from 'react-icons/hi';
 import Navbar from '../components/Navbar';
 
+/**
+ * La función Gracias muestra un mensaje y un botón para continuar comprando después de realizar un
+ * pedido.
+ * @returns Un componente funcional de React que muestra un mensaje de agradecimiento por realizar un
+ * pedido, junto con un botón para continuar comprando. También incluye algunos estilos usando Tailwind
+ * CSS y un componente de barra de navegación.
+ */
 const ThankYou = () => {
 	const router = useRouter();
 	return (

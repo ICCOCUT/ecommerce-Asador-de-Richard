@@ -8,7 +8,7 @@ import { TApiAllCategoriesResp } from '../types';
 interface IProductGrid extends TApiAllCategoriesResp {
 	showLink: boolean;
 	hasMore?: boolean;
-	loadMoreFun?: Function;
+	loadMoreFun?: () => void;
 }
 
 /* Este es un componente funcional en TypeScript React que admite accesorios de tipo `IProductGrid`.
