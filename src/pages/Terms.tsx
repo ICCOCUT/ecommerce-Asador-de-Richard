@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Alert from '../components/Alert';
 import { generalidades, section, sectionContent } from '../data/Terms';
 
 const Terms = () => {
@@ -54,6 +55,7 @@ const Terms = () => {
 						))}
 					</div>
 				</main>
+				<Alert />
 			</div>
 			<Footer />
 		</div>

@@ -14,7 +14,7 @@ export default function Alert() {
 	}
 
 	return showAlert ? (
-		<div className='fixed bottom-0 right-0' id='alerta'>
+		<div className='fixed bottom-0 right-0 z-50' id='alerta'>
 			<div
 				className='bg-yellow-100 rounded-lg py-5 px-6 mb-3 text-base text-yellow-700 inline-flex items-center w-full'
 				role='alert'>
@@ -33,7 +33,7 @@ export default function Alert() {
 					/>
 				</svg>
 				<p>Esta es una página de prueba con fines educativos.</p>
-				<button onClick={hideAlert} className='ml-auto'>
+				<button onClick={hideAlert} className='ml-auto' name='Cerrar alerta'>
 					<svg
 						xmlns='http://www.w3.org/2000/svg'
 						className='h-6 w-6'

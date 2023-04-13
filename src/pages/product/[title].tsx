@@ -84,6 +84,7 @@ const SingleProduct = () => {
 											USD {product.price}
 										</p>
 										<button
+											name='Buy Now'
 											onClick={() =>
 												mutate({
 													title: product.title,

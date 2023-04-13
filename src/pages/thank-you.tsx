@@ -41,6 +41,7 @@ const ThankYou = () => {
 								</p>
 							</div>
 							<button
+								name='Continue Shopping'
 								onClick={() => router.push('/')}
 								type='button'
 								className='inline-flex items-center rounded-md border border-transparent bg-sky-800 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-sky-900 mt-4'>

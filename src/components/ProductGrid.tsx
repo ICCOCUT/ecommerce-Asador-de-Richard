@@ -84,6 +84,7 @@ const ProductGrid = (props: IProductGrid) => {
 						<div className='flex items-center justify-center mt-8'>
 							{hasMore ? (
 								<button
+									name='loadMore'
 									ref={ref}
 									type='button'
 									className='inline-flex items-center rounded-md border border-transparent bg-sky-800 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-sky-900'>

@@ -31,7 +31,7 @@ const Carousel = () => {
 
 	return (
 		<section className='text-gray-400 bg-gray-600  body-font bg-no-repeat bg-cover bg-[url(/img/Bg-Testimonials.png)]'>
-			<div className='container px-5 py-24 mx-auto '>
+			<div className='container px-5 py-16 mx-auto'>
 				<h2 className='text-4xl font-medium title-font text-primaryYellow text-center'>
 					Testimonials
 				</h2>
@@ -54,16 +54,15 @@ const Carousel = () => {
 				<p className='text-white text-xl text-center'>
 					{items[currentIndex]?.testimonial}
 				</p>
-				{/* Agregar los botones de navegación y la lógica para cambiar los elementos */}
 				<div className='flex justify-center mt-4'>
-					<button onClick={handlePrev}>
+					<button name='pasar al anterior testimonio' onClick={handlePrev}>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
 							strokeWidth='1.5'
 							stroke='currentColor'
-							className='h-8 w-8 hover:text-primaryYellow'>
+							className='h-14 w-14 hover:text-primaryYellow'>
 							<path
 								strokeLinecap='round'
 								strokeLinejoin='round'
@@ -71,14 +70,14 @@ const Carousel = () => {
 							/>
 						</svg>
 					</button>
-					<button onClick={handleNext}>
+					<button name='pasar al siguiente testimonio' onClick={handleNext}>
 						<svg
 							xmlns='http://www.w3.org/2000/svg'
 							fill='none'
 							viewBox='0 0 24 24'
 							strokeWidth='1.5'
 							stroke='currentColor'
-							className='h-8 w-8 hover:text-primaryYellow'>
+							className='h-14 w-14 hover:text-primaryYellow'>
 							<path
 								strokeLinecap='round'
 								strokeLinejoin='round'

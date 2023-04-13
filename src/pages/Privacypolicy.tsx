@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Alert from '../components/Alert';
 import { Titulo, Info } from '../data/Privacypolicy';
 
 /* Este es un componente funcional en TypeScript React que representa la página de política de
@@ -65,6 +66,7 @@ const Terms = () => {
 						))}
 					</div>
 				</main>
+				<Alert />
 			</div>
 			<Footer />
 		</div>

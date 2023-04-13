@@ -42,7 +42,7 @@ export default function Chefs() {
 								</svg>
 							</div>
 							<div className='p-6'>
-								<h5 className='font-bold text-lg mb-3'>Juan García</h5>
+								<h3 className='font-bold text-lg mb-3'>Juan García</h3>
 								<p className='mb-4 pb-2 text-justify'>
 									Juan es un carismático chef de cocina italiana con un amor
 									profundo por la pasta. Nacido en Italia y criado en Nueva
@@ -81,7 +81,7 @@ export default function Chefs() {
 								</svg>
 							</div>
 							<div className='p-6'>
-								<h5 className='font-bold text-lg mb-3'>Carlos Ramírez</h5>
+								<h3 className='font-bold text-lg mb-3'>Carlos Ramírez</h3>
 								<p className='mb-4 pb-2 text-justify'>
 									Carlos es un reconocido chef de cocina española con una gran
 									pasión por los sabores intensos y los ingredientes frescos del
@@ -120,7 +120,7 @@ export default function Chefs() {
 								</svg>
 							</div>
 							<div className='p-6'>
-								<h5 className='font-bold text-lg mb-3'>Alessandro Rossi</h5>
+								<h3 className='font-bold text-lg mb-3'>Alessandro Rossi</h3>
 								<p className='mb-4 pb-2 text-justify'>
 									Alessandro es un chef italiano con una larga trayectoria en la
 									cocina clásica italiana. Nacido en la región de la Toscana,
@@ -136,7 +136,6 @@ export default function Chefs() {
 						</div>
 					</div>
 				</section>
-				{/* <!-- Section: Design Block --> */}
 			</div>
 		</div>
 	);

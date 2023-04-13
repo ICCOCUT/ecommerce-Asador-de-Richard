@@ -36,18 +36,20 @@ const Footer = () => {
 							TIEMPO DE ATENCIÓN
 						</h2>
 						<nav className='list-none mb-10 text-gray-100'>
-							<li>
-								<p>Lunes - Viernes</p>
-								<p>8:00 AM - 10:00 PM</p>
-							</li>
-							<li>
-								<p>Sábado</p>
-								<p>8:00 AM - 9:00 PM</p>
-							</li>
-							<li>
-								<p>Domingo</p>
-								<p>Cerrado</p>
-							</li>
+							<ul>
+								<li>
+									<p>Lunes - Viernes</p>
+									<p>8:00 AM - 10:00 PM</p>
+								</li>
+								<li>
+									<p>Sábado</p>
+									<p>8:00 AM - 9:00 PM</p>
+								</li>
+								<li>
+									<p>Domingo</p>
+									<p>Cerrado</p>
+								</li>
+							</ul>
 						</nav>
 					</div>
 					<div className='lg:w-1/3 md:w-1/2 w-full px-4'>
@@ -55,34 +57,36 @@ const Footer = () => {
 							NAVEGACIÓN
 						</h2>
 						<nav className='list-none mb-10'>
-							<li>
-								<NextLink
-									href='/menu'
-									className='text-gray-100 hover:text-teal-300'>
-									Menú
-								</NextLink>
-							</li>
-							<li>
-								<NextLink
-									href='/about'
-									className='text-gray-100 hover:text-teal-300'>
-									Quienes somos
-								</NextLink>
-							</li>
-							<li>
-								<NextLink
-									href='/contacto'
-									className='text-gray-100 hover:text-teal-300'>
-									Contacto
-								</NextLink>
-							</li>
-							<li>
-								<NextLink
-									href='/platillos'
-									className='text-gray-100 hover:text-teal-300'>
-									Galería
-								</NextLink>
-							</li>
+							<ul>
+								<li>
+									<NextLink
+										href='/menu'
+										className='text-gray-100 hover:text-teal-300'>
+										Menú
+									</NextLink>
+								</li>
+								<li>
+									<NextLink
+										href='/about'
+										className='text-gray-100 hover:text-teal-300'>
+										Quienes somos
+									</NextLink>
+								</li>
+								<li>
+									<NextLink
+										href='/contacto'
+										className='text-gray-100 hover:text-teal-300'>
+										Contacto
+									</NextLink>
+								</li>
+								<li>
+									<NextLink
+										href='/platillos'
+										className='text-gray-100 hover:text-teal-300'>
+										Galería
+									</NextLink>
+								</li>
+							</ul>
 						</nav>
 					</div>
 					<div className='lg:w-1/3 md:w-1/2 w-full px-4'>
