@@ -1,17 +1,17 @@
 export const items = [
 	{
-		imgUrl: '/img/clientes/persona8.jpg',
-		name: 'Andrés Ríos',
-		profession: 'Foodie aventurero',
+		imgUrl: '/img/clientes/persona0.jpeg',
+		name: 'Fernando Ramirez',
+		profession: 'Cazafantasmas',
 		testimonial:
-			'Este restaurante ofrece platos exóticos y emocionantes que no se encuentran en otros lugares. Si buscas una experiencia gastronómica única, definitivamente debes probarlo.',
+			'Increíble experiencia en la pollería embrujada! Los pollos asados eran tan deliciosos que casi olvidé que estábamos cazando pollos fantasma. El ambiente era espeluznantemente divertido, con luces parpadeantes y sonidos misteriosos. El personal vestido con trajes de cazafantasmas añadió un toque único. ¡Definitivamente volveré a atrapar más pollos y saborear sus deliciosas presas.',
 	},
 	{
-		imgUrl: '/img/clientes/persona1.jpg',
-		name: 'Clara López',
-		profession: 'Food Blogger',
+		imgUrl: '/img/clientes/persona1.jpeg',
+		name: 'Andrés Ríos',
+		profession: 'Astronauta',
 		testimonial:
-			'El restaurante tiene un ambiente acogedor y los platos son deliciosos. Definitivamente lo recomiendo.',
+			'La pollería "El Pollo Cósmico" es una experiencia de otro mundo! Me sentí como si estuviera en una misión espacial para probar los pollos más sabrosos del universo. Los marinados alienígenas y las especias intergalácticas les dieron a los pollos un sabor cósmico que no puedo describir con palabras. El personal vestido con trajes espaciales y los platillos con forma de ovnis realmente elevaron la experiencia. ¡Definitivamente volveré a explorar más de sus deliciosos pollos siderales',
 	},
 	{
 		imgUrl: '/img/clientes/persona2.jpg',
@@ -19,6 +19,13 @@ export const items = [
 		profession: 'Chef de repostería',
 		testimonial:
 			'El servicio en este restaurante es excepcional. Los postres son una obra de arte y el personal es amable y atento.',
+	},
+	{
+		imgUrl: '/img/clientes/persona8.jpg',
+		name: 'Clara López',
+		profession: 'Food Blogger',
+		testimonial:
+			'El restaurante tiene un ambiente acogedor y los platos son deliciosos. Definitivamente lo recomiendo.',
 	},
 	{
 		imgUrl: '/img/clientes/persona3.jpg',

@@ -33,7 +33,7 @@ const Carousel = () => {
 		<section className='text-gray-400 bg-gray-600  body-font bg-no-repeat bg-cover bg-[url(/img/Bg-Testimonials.png)]'>
 			<div className='container px-5 py-16 mx-auto'>
 				<h2 className='text-4xl font-medium title-font text-primaryYellow text-center'>
-					Testimonials
+					Testimonios
 				</h2>
 
 				<div className='flex justify-center items-center rounded-full h-36 w-36 bg-transparent mx-auto mb-6 overflow-hidden'>
