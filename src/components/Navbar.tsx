@@ -36,7 +36,7 @@ const Navbar = () => {
 								<li className='text-center'>
 									<NextLink
 										className='text-primaryYellow hover:text-white/75 font-bold text-xl'
-										href='/about'>
+										href='/About'>
 										SOBRE NOSOTROS
 									</NextLink>
 								</li>
@@ -50,7 +50,7 @@ const Navbar = () => {
 								<li className='text-center'>
 									<NextLink
 										className='text-primaryYellow hover:text-white/75 font-bold text-xl'
-										href='/contacto'>
+										href='/Contacto'>
 										CONTACTOS
 									</NextLink>
 								</li>
@@ -60,19 +60,21 @@ const Navbar = () => {
 					<div className='flex items-center gap-4'>
 						<div className='flex sm:gap-4'>
 							<div className='px-5 py-2.5 text-sm text-primaryYellow flex'>
-								<Image
-									className='h-auto w-auto'
-									src='carrito.svg'
-									alt='carrito de compras'
-									width={40}
-									height={40}
-								/>
+								<NextLink href='/Carro'>
+									<Image
+										className='h-auto w-auto'
+										src='carrito.svg'
+										alt='carrito de compras'
+										width={40}
+										height={40}
+									/>
+								</NextLink>
 								<div className='border-l-2 border-primaryYellow' />
 							</div>
 							<div className='flex'>
 								<NextLink
 									className='rounded-2xl px-2 py-1.5 text-center text-base font-medium text-black bg-primaryYellow hover:bg-primaryYellow/75 hover:text-black/75 self-center'
-									href='/'>
+									href='/Login'>
 									Iniciar sesión
 								</NextLink>
 							</div>

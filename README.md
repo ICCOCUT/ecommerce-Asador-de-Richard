@@ -69,7 +69,7 @@ En esta sección se enumerar los principales frameworks/bibliotecas utilizados p
 - [![Next][next.js]][next-url]
 - [![React][react.js]][react-url]
 - [![Tailwind.css][tailwind.css]][tailwind.css]
-
+- [![Estripe.js][stripe.js]][stripe-url]
 <p align="right">(<a href="#readme-top">Regresar al inicio</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -121,13 +121,13 @@ _Para más ejemplos, revisa la [Documentation](https://example.com)_
 ## Roadmap
 
 - [x] Agregar El footer
-- [ ] Terminar la landing page
-- [ ] Terminar el diseño de la aplicación
+- [x] Terminar la landing page
+- [x] Terminar el diseño de la aplicación
 - [ ] Terminar las demás rutas
-  - [ ] Terminar la ruta de menú
-  - [ ] Terminar la ruta de about
-  - [ ] Terminar la ruta de platillos
-  - [ ] Terminar la ruta de contacto
+  - [x] Terminar la ruta de Inicio
+  - [x] Terminar la ruta de about
+  - [ ] Terminar la ruta de Menu
+  - [x] Terminar la ruta de contacto
 - [ ] Terminar el sistema de login
 - [ ] Terminar la base de datos
 - [ ] Terminar el sistema de pedidos
@@ -166,7 +166,7 @@ Distribuido bajo la Licencia MIT. Consulte `LICENSE.txt` para más información.
 
 Fufinop - [@Fufinop](https://twitter.com/Fufinop) - [ernestodelazamora@gmail.com](mailto:ernestodelazamora@gmail.com)
 
-Fernando-droidx - [@Fernando](https://www.facebook.com/profile.php?id=100004615576297) - [correo](mailto:luis.ramirez4415@alumnos.udg.mx)
+Fernando-droidx - [@Fernando](https://www.facebook.com/profile.php?id=100004615576297) - [luis.ramirez4415@alumnos.udg.mx](mailto:luis.ramirez4415@alumnos.udg.mx)
 
 <p align="right">(<a href="#readme-top">Regresar al inicio</a>)</p>
 
@@ -189,3 +189,5 @@ Utilizamos este espacio para enumerar los recursos que nos resultaron útiles y 
 [react-url]: https://reactjs.org/
 [tailwind.css]: https://img.shields.io/badge/Tailwindcss-20232A?style=for-the-badge&logo=TailwindCSS&logoColor=#06B6D4
 [tailwind.css]: https://tailwindcss.com/
+[estripe.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[stripe-url]: https://stripe.com/es

@@ -25,7 +25,7 @@ const Footer = () => {
 						/>
 						<span className='ml-3 text-xl'>EL ASADOR DE RICHARD</span>
 					</a>
-					<p className='mt-2 text-sm text-gray-100'>
+					<p className='mt-2 text-sm text-gray-100 text-justify'>
 						Nuestro restaurante te espera, servicio y comida al más alto nivel,
 						porque te lo mereces
 					</p>
@@ -60,30 +60,30 @@ const Footer = () => {
 							<ul>
 								<li>
 									<NextLink
-										href='/menu'
+										href='/'
 										className='text-gray-100 hover:text-teal-300'>
-										Menú
+										Inicio
 									</NextLink>
 								</li>
 								<li>
 									<NextLink
-										href='/about'
+										href='/About'
 										className='text-gray-100 hover:text-teal-300'>
-										Quienes somos
+										Sobre nosotros
 									</NextLink>
 								</li>
 								<li>
 									<NextLink
-										href='/contacto'
+										href='/Menu'
+										className='text-gray-100 hover:text-teal-300'>
+										Menu
+									</NextLink>
+								</li>
+								<li>
+									<NextLink
+										href='/Contacto'
 										className='text-gray-100 hover:text-teal-300'>
 										Contacto
-									</NextLink>
-								</li>
-								<li>
-									<NextLink
-										href='/platillos'
-										className='text-gray-100 hover:text-teal-300'>
-										Galería
 									</NextLink>
 								</li>
 							</ul>
