@@ -1,6 +1,6 @@
 export const items = [
 	{
-		imgUrl: '/img/clientes/persona0.jpg',
+		imgUrl: '/img/clientes/Fernando.jpg',
 		name: 'Fernando Ramirez',
 		profession: 'Cazafantasmas',
 		testimonial:

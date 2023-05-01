@@ -9,7 +9,7 @@ import Image from 'next/image';
 export default function Presentation() {
 	return (
 		<section
-			className='text-gray-400 body-font bg-slate-600  bg-no-repeat bg-cover bg-[url(/img/heroImage.png)]
+			className='text-gray-400 body-font bg-slate-600  bg-no-repeat bg-cover bg-[url(/img/heroImage.webp)]
 		'>
 			<div className='container px-5 pt-24 pb-24 mx-auto'>
 				<div className='flex flex-col text-center w-full mb-52 text-primaryYellow'>

@@ -97,7 +97,7 @@ const Contacto = () => {
 			<section className='text-white body-font'>
 				<div className='container px-5 py-12 pt-0 mx-auto'>
 					<div className='flex flex-col text-center w-full mb-20'>
-						<h1 className='text-2xl font-medium title-font mb-4 text-white tracking-widest'>
+						<h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-white'>
 							Nuestro Equipo
 						</h1>
 						<p className='lg:w-2/3 mx-auto leading-relaxed text-base'>
