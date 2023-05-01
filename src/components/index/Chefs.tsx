@@ -56,7 +56,6 @@ export default function Chefs() {
 								</p>
 							</div>
 						</div>
-
 						<div className='bg-yellow-600 block rounded-lg shadow-lg mb-6 lg:mb-0'>
 							<div
 								className='relative overflow-hidden bg-no-repeat bg-cover'
@@ -96,7 +95,6 @@ export default function Chefs() {
 								</p>
 							</div>
 						</div>
-
 						<div className='bg-yellow-600 block rounded-lg shadow-lg'>
 							<div
 								className='relative overflow-hidden bg-no-repeat bg-cover'

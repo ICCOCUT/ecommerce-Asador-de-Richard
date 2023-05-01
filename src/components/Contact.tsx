@@ -11,7 +11,6 @@ function Contact() {
 						style={{ border: '0' }}
 						allowFullScreen></iframe>
 				</div>
-
 				<div className='container text-gray-800 px-4 md:px-12'>
 					<div
 						className='block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6'

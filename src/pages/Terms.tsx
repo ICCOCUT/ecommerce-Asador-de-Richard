@@ -4,6 +4,15 @@ import Footer from '../components/Footer';
 import Alert from '../components/Alert';
 import { generalidades, section, sectionContent } from '../data/Terms';
 
+/* Este es un componente funcional en TypeScript React que representa la página de términos de
+servicio. Incluye el título de la página, la meta descripción y el favicon en el componente Head.
+También se incluyen los componentes Navbar, Footer y Alert. El contenido principal de la página está
+envuelto en un contenedor con un color de fondo gris. Incluye un título, información general y una
+lista de secciones con detalles que se pueden expandir o contraer. El contenido de las secciones se
+almacena en las matrices `generalidades`, `section` y `sectionContent`. La función `mapa` se usa
+para iterar sobre la matriz `sección` y generar un elemento `detalles` para cada sección. El
+elemento `detalles` incluye un elemento `resumen` que muestra el título de la sección y un icono de
+alternancia. El elemento `p` dentro del elemento `detalles` muestra el contenido de la sección. */
 const Terms = () => {
 	return (
 		<div>
@@ -22,7 +31,6 @@ const Terms = () => {
 						<h3 className='text-primaryYellow'>GENERALIDADES</h3>
 						<p className='text-justify text-white'>{generalidades[0]}</p>
 						<p className='text-justify text-white'>{generalidades[1]}</p>
-
 						{section.map((item, index) => (
 							<div key={index}>
 								<details
@@ -46,7 +54,6 @@ const Terms = () => {
 											</svg>
 										</span>
 									</summary>
-
 									<p className='mt-4 leading-relaxed text-gray-700'>
 										{sectionContent[index]}
 									</p>

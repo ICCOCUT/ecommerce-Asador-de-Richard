@@ -19,7 +19,6 @@ const ThankYou = () => {
 				<meta name='description' content='All Products' />
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
 			<main className='container mx-auto'>
 				<Navbar />
 				<div className='rounded-md bg-green-50 p-4 mt-8'>

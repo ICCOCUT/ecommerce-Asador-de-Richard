@@ -1,13 +1,13 @@
 export const items = [
 	{
-		imgUrl: '/img/clientes/persona0.jpeg',
+		imgUrl: '/img/clientes/persona0.jpg',
 		name: 'Fernando Ramirez',
 		profession: 'Cazafantasmas',
 		testimonial:
 			'Increíble experiencia en la pollería embrujada! Los pollos asados eran tan deliciosos que casi olvidé que estábamos cazando pollos fantasma. El ambiente era espeluznantemente divertido, con luces parpadeantes y sonidos misteriosos. El personal vestido con trajes de cazafantasmas añadió un toque único. ¡Definitivamente volveré a atrapar más pollos y saborear sus deliciosas presas.',
 	},
 	{
-		imgUrl: '/img/clientes/persona1.jpeg',
+		imgUrl: '/img/clientes/kevin.jpg',
 		name: 'Andrés Ríos',
 		profession: 'Astronauta',
 		testimonial:

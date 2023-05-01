@@ -35,7 +35,6 @@ const Carousel = () => {
 				<h2 className='text-4xl font-medium title-font text-primaryYellow text-center'>
 					Testimonios
 				</h2>
-
 				<div className='flex justify-center items-center rounded-full h-36 w-36 bg-transparent mx-auto mb-6 overflow-hidden'>
 					<Image
 						width='300'
