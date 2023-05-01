@@ -23,3 +23,11 @@ export const Historia = [
 	'La historia de El Asador de Richard está llena de momentos memorables, desde la apertura de su primer local hasta la expansión a múltiples ubicaciones en todo el país. Richard, junto con su equipo, ha superado desafíos y ha enfrentado momentos difíciles con determinación y dedicación. Sin embargo, el amor y la pasión por la cocina y el servicio al cliente han sido la fuerza impulsora detrás de su éxito.',
 	'Hoy en día, El Asador de Richard es una referencia en la escena gastronómica, siendo reconocido por su excelente comida, su atención al cliente y su compromiso con la comunidad y el medio ambiente. La visión de Richard de crear un lugar donde los comensales puedan disfrutar de una experiencia gastronómica excepcional sigue siendo el motor que impulsa a este restaurante a seguir creciendo y siendo líder en el mercado culinario.',
 ];
+
+export const Equipo = [
+	'El equipo de trabajo de El Asador de Richard es una familia de apasionados de la gastronomía y la hospitalidad. Compuesto por talentosos chefs, amables camareros, dedicados personal de cocina y otros profesionales, el equipo de El Asador de Richard trabaja en armonía para ofrecer una experiencia culinaria excepcional a sus comensales. Con una visión compartida de brindar el mejor servicio y la mejor comida, este equipo se enorgullece de su compromiso con la calidad, la creatividad y la innovación en la cocina. Unidos por su amor por la comida y la satisfacción del cliente, el equipo de El Asador de Richard trabaja incansablemente para superar las expectativas de los comensales en cada visita.',
+];
+
+export const Richard = [
+	'Nuestro restaurante, El Asador de Richard, es el resultado de mi pasión por la buena comida, la hospitalidad y el amor por compartir experiencias inolvidables. Cada plato que servimos, cada detalle en nuestra decoración y cada sonrisa en nuestro equipo refleja el amor y dedicación que hemos puesto en este sueño hecho realidad. Estamos comprometidos en brindar a nuestros comensales una experiencia culinaria excepcional, donde los sabores se mezclan en armonía y los momentos se convierten en recuerdos imborrables. Esperamos darle la bienvenida a nuestro restaurante y ser parte de sus momentos especiales.',
+];
