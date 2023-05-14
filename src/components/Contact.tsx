@@ -1,6 +1,14 @@
 import Contactos from './Contacto/Contactos';
 
 function Contact() {
+	const soloLetras = (event: React.KeyboardEvent<HTMLInputElement>) => {
+		const regex = /[0-9]/;
+		const esNumero = regex.test(event.key);
+		if (esNumero) {
+			event.preventDefault();
+		}
+	};
+
 	return (
 		<div className='container  px-6 mx-auto'>
 			<section className='text-gray-800'>
@@ -43,6 +51,9 @@ function Contact() {
 												focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none'
 											id='exampleInput7'
 											placeholder='Nombre completo'
+											pattern='[a-zA-Z]+'
+											onKeyPress={soloLetras}
+											required
 										/>
 									</div>
 									<div className='form-group mb-6'>
@@ -95,6 +106,7 @@ function Contact() {
 											type='checkbox'
 											className='form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer'
 											id='exampleCheck87'
+											required
 										/>
 										<label
 											className='form-check-label inline-block text-gray-800'
