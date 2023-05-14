@@ -46,17 +46,19 @@ const Menu: NextPage = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Navbar />
-			<main className='container mx-auto'>
-				{isLoading ? (
-					<Skelton />
-				) : (
-					categories &&
-					categories?.length > 0 && (
-						<ProductGrid showLink categories={categories} />
-					)
-				)}
-				<Alert />
-			</main>
+			<section className='border-2 border-t-primaryOrange border-transparent bg-primaryGray'>
+				<main className='container mx-auto'>
+					{isLoading ? (
+						<Skelton />
+					) : (
+						categories &&
+						categories?.length > 0 && (
+							<ProductGrid showLink categories={categories} />
+						)
+					)}
+					<Alert />
+				</main>
+			</section>
 			<Footer />
 		</div>
 	);

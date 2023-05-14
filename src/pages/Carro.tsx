@@ -13,7 +13,7 @@ const Contacto = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Navbar />
-			<div className='bg-primaryGray'>
+			<div className='bg-primaryGray border-2 border-t-primaryOrange border-transparent'>
 				<main className='container mx-auto'>
 					<section>
 						<div className='mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8'>

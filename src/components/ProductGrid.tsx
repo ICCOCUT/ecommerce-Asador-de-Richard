@@ -32,17 +32,17 @@ const ProductGrid = (props: IProductGrid) => {
 	}, [inView, loadMoreFun]);
 
 	return (
-		<div className='bg-white'>
+		<div>
 			{categories.map(category => (
-				<div className='mt-12  p-6' key={category.name}>
+				<div className='p-6' key={category.name}>
 					<div className='flex flex-row justify-between'>
-						<span className='inline-flex items-center rounded-md bg-sky-800 px-8 py-2 text-md font-medium text-white'>
+						<span className='inline-flex items-center rounded-md bg-primaryOrange px-8 py-2 text-md font-medium text-black'>
 							{category.name}
 						</span>
 						{showLink && (
 							<NextLink href={`/category/${category.id}`}>
-								<p className='flex flex-row gap-2 underline hover:cursor-pointer items-center'>
-									View More
+								<p className='flex flex-row gap-2 underline hover:cursor-pointer items-center text-white hover:text-primaryYellow'>
+									Ver más
 									<AiOutlineRight />
 								</p>
 							</NextLink>
@@ -51,7 +51,7 @@ const ProductGrid = (props: IProductGrid) => {
 					<div className='mt-6  grid grid-cols-1 gap-y-10 gap-x-6 xl:gap-x-8 sm:grid-cols-2 lg:grid-cols-4'>
 						{category?.products.map(product => (
 							<div
-								className='p-6 group rounded-lg border border-gray-200 bg-neutral-200'
+								className='p-6 group rounded-lg border bg-secondYellow'
 								key={product.title}>
 								<div className='min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80'>
 									<NextImage
@@ -68,12 +68,12 @@ const ProductGrid = (props: IProductGrid) => {
 									<h3 className='text-sm font-medium text-gray-900'>
 										{product.title}
 									</h3>
-									<p className='mt-1 text-sm text-gray-500'>{product.price}</p>
+									<p className='mt-1 text-sm text-black'>{product.price}</p>
 								</div>
 								<div className='mt-6'>
 									<NextLink href={`/product/${product.title}`}>
 										<p className='relative flex items-center justify-center rounded-md border border-transparent bg-sky-800 py-2 px-8 text-sm font-medium text-white hover:bg-sky-900 hover:cursor-pointer'>
-											View More Details
+											Ver con más detalle
 										</p>
 									</NextLink>
 								</div>
@@ -95,7 +95,7 @@ const ProductGrid = (props: IProductGrid) => {
 									<div className='flex'>
 										<div className='ml-3'>
 											<p className='text-sm text-yellow-700'>
-												You have viewed all the Products under this category.
+												Has visto todos los productos de esta categoria.
 											</p>
 										</div>
 									</div>

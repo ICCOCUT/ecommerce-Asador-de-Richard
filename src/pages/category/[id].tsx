@@ -67,23 +67,25 @@ const SingleCategory = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Navbar />
-			<main className='container mx-auto'>
-				{isLoading ? (
-					<Skelton />
-				) : (
-					<>
-						{allProductsWithCategory &&
-							allProductsWithCategory.products.length > 0 && (
-								<ProductGrid
-									hasMore={allProductsWithCategory.hasMore}
-									showLink={false}
-									categories={[allProductsWithCategory]}
-									loadMoreFun={fetchNextPage}
-								/>
-							)}
-					</>
-				)}
-			</main>
+			<section className='bg-primaryGray'>
+				<main className='container mx-auto '>
+					{isLoading ? (
+						<Skelton />
+					) : (
+						<>
+							{allProductsWithCategory &&
+								allProductsWithCategory.products.length > 0 && (
+									<ProductGrid
+										hasMore={allProductsWithCategory.hasMore}
+										showLink={false}
+										categories={[allProductsWithCategory]}
+										loadMoreFun={fetchNextPage}
+									/>
+								)}
+						</>
+					)}
+				</main>
+			</section>
 			<Footer />
 		</div>
 	);

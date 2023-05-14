@@ -22,7 +22,7 @@ const Terms = () => {
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<Navbar />
-			<div className='bg-primaryGray'>
+			<div className='bg-primaryGray border-2 border-t-primaryOrange border-transparent'>
 				<main className='container mx-auto'>
 					<div className='space-y-4'>
 						<h1 className='text-2xl font-bold text-primaryYellow sm:text-3xl'>
