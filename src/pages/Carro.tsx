@@ -3,7 +3,16 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Alert from '../components/Alert';
 import NextImage from 'next/image';
+import NextLink from 'next/link';
 
+/**
+ * Este es un componente funcional de React que muestra una página de carrito de compras con artículos,
+ * cantidades y precios.
+ * @returns Un componente funcional de React que muestra una página de carrito de compras con una lista
+ * de artículos, sus detalles, entrada de cantidad y botón de eliminación. También muestra el subtotal,
+ * el IVA, el descuento y el precio total de los artículos del carrito. El componente incluye un
+ * componente de barra de navegación, pie de página y alerta.
+ */
 const Contacto = () => {
 	return (
 		<div>
@@ -20,7 +29,7 @@ const Contacto = () => {
 							<div className='mx-auto max-w-3xl'>
 								<header className='text-center'>
 									<h1 className='text-xl font-bold text-white sm:text-3xl'>
-										Your Cart
+										Tu Carrito
 									</h1>
 								</header>
 								<div className='mt-8'>
@@ -28,7 +37,7 @@ const Contacto = () => {
 										<li className='flex items-center gap-4'>
 											<NextImage
 												src='/img/Galery/asador.jpg'
-												alt=''
+												alt='Asador image'
 												width={64}
 												height={64}
 												className='h-16 w-16 rounded object-cover'
@@ -206,11 +215,11 @@ const Contacto = () => {
 												</div>
 											</dl>
 											<div className='flex justify-end'>
-												<a
-													href='#'
+												<NextLink
+													href='/'
 													className='block rounded bg-gray-700 px-5 py-3 text-sm text-gray-100 transition hover:bg-gray-600'>
 													Checkout
-												</a>
+												</NextLink>
 											</div>
 										</div>
 									</div>

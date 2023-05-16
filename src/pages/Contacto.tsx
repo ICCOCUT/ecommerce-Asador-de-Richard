@@ -4,6 +4,13 @@ import Footer from '../components/Footer';
 import Alert from '../components/Alert';
 import Contact from '../components/Contact';
 
+/**
+ * Este es un componente funcional que muestra una página de contacto con una barra de navegación, un
+ * formulario de contacto, un mensaje de alerta y un pie de página.
+ * @returns Se devuelve el componente Contacto, que incluye un componente Head con título, descripción
+ * y metaetiquetas de favicon, un componente Navbar, un elemento principal con un componente Contact,
+ * un componente Alert y un componente Footer.
+ */
 const Contacto = () => {
 	return (
 		<div>

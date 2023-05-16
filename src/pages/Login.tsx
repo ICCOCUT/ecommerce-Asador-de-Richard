@@ -4,6 +4,14 @@ import Footer from '../components/Footer';
 import Alert from '../components/Alert';
 import NextImage from 'next/image';
 
+/**
+ * Este es un componente funcional para una página de inicio de sesión con una imagen de fondo y campos
+ * de entrada para correo electrónico y contraseña.
+ * @returns Se está devolviendo un componente funcional de React llamado "Contacto". Contiene código
+ * JSX que muestra una página de inicio de sesión con una imagen de fondo, un logotipo y un formulario
+ * con dos campos de entrada para correo electrónico y contraseña, y un botón de envío. También incluye
+ * una barra de navegación, un componente de alerta y un pie de página.
+ */
 const Contacto = () => {
 	return (
 		<div>

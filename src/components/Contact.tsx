@@ -19,7 +19,8 @@ function Contact() {
 						src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3734.95275300906!2d-103.23875028507466!3d20.589986986237644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b56d8cc4c519%3A0xcdb831beae44e9d4!2sEl%20asador%20de%20Richard!5e0!3m2!1ses-419!2smx!4v1682278703454!5m2!1ses-419!2smx
         '
 						style={{ border: '0' }}
-						allowFullScreen></iframe>
+						allowFullScreen
+					/>
 				</div>
 				<div className='container text-gray-800 px-4 md:px-12'>
 					<div
@@ -99,7 +100,8 @@ function Contact() {
 										'
 											id='exampleFormControlTextarea13'
 											rows={5}
-											placeholder='Mensaje'></textarea>
+											placeholder='Mensaje'
+										/>
 									</div>
 									<div className='form-group form-check text-center mb-6'>
 										<input

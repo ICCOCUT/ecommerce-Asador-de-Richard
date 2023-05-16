@@ -4,6 +4,13 @@ import Footer from '../components/Footer';
 import Alert from '../components/Alert';
 import { Titulo, Info } from '../data/Privacypolicy';
 
+/* Este código define un componente funcional llamado `Términos` que devuelve un elemento JSX. El
+elemento JSX contiene la estructura HTML de una página de política de privacidad, incluido un
+título, una barra de navegación, una sección principal con detalles sobre la política y un pie de
+página. La sección de detalles se genera dinámicamente utilizando la función `map` para iterar sobre
+dos matrices (`Titulo` e `Info`) y crear un elemento `detalles` para cada elemento de las matrices.
+El elemento `detalles` contiene un elemento `resumen` con un título y un icono, y un elemento `p`
+con el contenido de la sección de política. */
 const Terms = () => {
 	return (
 		<div>
