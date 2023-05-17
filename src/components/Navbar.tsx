@@ -60,7 +60,7 @@ const Navbar = () => {
 					<div className='flex items-center gap-4'>
 						<div className='flex sm:gap-4'>
 							<div className='px-5 py-2.5 text-sm text-primaryYellow flex'>
-								<NextLink href='/Carro'>
+								{/* <NextLink href='/Carro'>
 									<Image
 										className='h-auto w-auto'
 										src='carrito.svg'
@@ -68,7 +68,7 @@ const Navbar = () => {
 										width={40}
 										height={40}
 									/>
-								</NextLink>
+								</NextLink> */}
 								<div className='border-l-2 border-primaryYellow' />
 							</div>
 							<div className='flex'>
