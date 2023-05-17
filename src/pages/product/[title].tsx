@@ -65,9 +65,8 @@ const SingleProduct = () => {
 								<div className='flex flex-col md:flex-row gap-x-8'>
 									<div className='min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80'>
 										<NextImage
-											layout='responsive'
-											width='25'
-											height='25'
+											width='250'
+											height='250'
 											src={`${product.image}`}
 											alt={product.title}
 											className='h-full w-full object-cover object-center lg:h-full lg:w-full'
@@ -81,7 +80,7 @@ const SingleProduct = () => {
 											{product.description}
 										</p>
 										<p className='text-xl font-normal text-gray-200 mt-4'>
-											USD {product.price}
+											Mex {product.price}
 										</p>
 										<button
 											name='Buy Now'

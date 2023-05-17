@@ -56,9 +56,8 @@ const ProductGrid = (props: IProductGrid) => {
 								<div className='min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80'>
 									<NextImage
 										priority
-										layout='responsive'
-										width='25'
-										height='25'
+										width='250'
+										height='250'
 										src={`${product.image}`}
 										alt={product.title}
 										className='h-full w-full object-cover object-center lg:h-full lg:w-full'

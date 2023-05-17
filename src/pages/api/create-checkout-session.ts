@@ -34,7 +34,7 @@ const checkoutSession = async (
 			line_items: [
 				{
 					price_data: {
-						currency: 'usd',
+						currency: 'mex',
 						product_data: {
 							name: requestBody?.title,
 							images: [requestBody.image],
