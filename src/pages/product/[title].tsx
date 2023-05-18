@@ -76,11 +76,11 @@ const SingleProduct = () => {
 										<h1 className='text-xl font-medium text-gray-100 '>
 											{product.title}
 										</h1>
-										<p className='text-xl font-light text-gray-300 mt-4'>
+										<p className='text-xl font-light text-gray-300 mt-4 text-justify'>
 											{product.description}
 										</p>
 										<p className='text-xl font-normal text-gray-200 mt-4'>
-											Mex {product.price}
+											Mex ${product.price}
 										</p>
 										<button
 											name='Buy Now'

@@ -86,6 +86,13 @@ Este es un ejemplo de cómo hacer una lista de las cosas que necesitas para util
   ```sh
   npm install npm@latest -g
   ```
+- Crear una archivo .env.local en la raíz del proyecto con las siguientes variables de entorno
+
+  ```sh
+  DATABASE_URL=''
+  STRIPE_SECRET_KEY=
+  NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+  ```
 
 ### Instalación
 
@@ -99,7 +106,11 @@ _A continuación se muestra un ejemplo de cómo purde instalar y configurar la a
    ```sh
    npm install
    ```
-3. Corre el proyecto
+3. Genera el esquema de prisma
+   ```sh
+   npx prisma generate
+   ```
+4. Corre el proyecto
    ```sh
    npm run dev
    ```

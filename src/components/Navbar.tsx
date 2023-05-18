@@ -72,11 +72,11 @@ const Navbar = () => {
 								<div className='border-l-2 border-primaryYellow' />
 							</div>
 							<div className='flex'>
-								<NextLink
+								{/* <NextLink
 									className='rounded-2xl px-2 py-1.5 text-center text-base font-medium text-black bg-primaryYellow hover:bg-primaryYellow/75 hover:text-black/75 self-center'
 									href='/Login'>
 									Iniciar sesión
-								</NextLink>
+								</NextLink> */}
 							</div>
 						</div>
 						<div className='block md:hidden'>
